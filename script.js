@@ -1,3 +1,5 @@
-window.addEventListener('hashchange', function() {
-    window.scrollTo(0, 0); // Prevent scrolling to the top
-  });
+var navbar = document.querySelector(".navbar")
+window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky"):
+    navbar.classList.remove("sticky")
+}

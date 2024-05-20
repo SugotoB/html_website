@@ -16,10 +16,17 @@
 
 body{
     background-color: var(--main-white);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*====NAVIGATION==== */
-
+#current{
+  background-color: white;
+  color: var(--light-green);
+  padding: 1vh;
+  border-radius: 10px;
+  
+}
 .main_nav{
     display: flex;
     justify-content: space-evenly;
@@ -131,4 +138,80 @@ button {
 
 button span{
     padding: 0 24px;
+}
+
+.newslettersectionbanner{
+  height: 60vh;
+  background-color: var(--dark-green);
+  align-content: center;
+}
+
+.textsection{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+
+}
+
+
+.ordersection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: var(--dark-green);
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+.titletop {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+
+.submit-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 720px) {
+  .container {
+      width: 100%;
+  }
 }

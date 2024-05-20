@@ -7,37 +7,37 @@ let products = {
         productName: "Classic American Baked",
         price: "30",
         image: "images/americanbaked_item.jpg",
-        link: "http://example.com/product1"
+        link: "itempage1.html"
       },
       {
         productName: "Creamy Caramel",
         price: "40",
         image: "images/creamycaramel_item.jpg",
-        link: "http://example.com/product1"
+        link: "itempage2.html"
       },
       {
         productName: "Quad Chocolate Baked",
         price: "35",
         image: "images/quadchocbaked_item.jpg",
-        link: "http://example.com/product1",
+        link: "itempage3.html",
       },
       {
-        productName: "Wild Strawberr y",
+        productName: "Wild Strawberry",
         price: "30",
         image: "images/wildstrawberry_item.jpg",
-        link: "http://example.com/product1"
+        link: "itempage4.html"
       },
       {
         productName: "Citron Glazed",
         price: "35",
         image: "images/citronglaze_item.jpg",
-        link: "http://example.com/product1"
+        link: "itempage5.html"
       },
       {
         productName: "Marbled",
         price: "40",
         image: "images/marblecheesecake.jpg",
-        link: "http://example.com/product1"
+        link: "itempage6.html"
       },
     ]
   };

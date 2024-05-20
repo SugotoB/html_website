@@ -11,7 +11,6 @@
     crossorigin="anonymous"
   ></script>
   <title>The Cheesecake Shop</title>
-    <title>The Cheesecake Shop</title>
 </head>
 <body>
         <!-- =======HERO & HEADER====== -->
@@ -23,18 +22,40 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="Menu.html">MENU</a></li>
                 <li><a href="locations.html">LOCATIONS</a></li>
-                <li><a href="contacts.html">CONTACTS</a></li>
                 <li><a href="order.html">ORDER</a></li>
               </ul>
             </div>
     
             <div class="hright">
             <a href="newsletter.html"><button id="newsletterbtn">
-                <span class="text1">NEWSLETTER</span>
+                <span class="text1" id="current">NEWSLETTER</span>
             </button></a>
             </div>
           </div>
         </nav>
+    
+
+<section class="newslettersectionbanner">
+  <div class="textsection">
+    <h1>NEWSLETTER</h1>
+  </div>
+</section>
+
+<div class="ordersection">
+  <form class="container">
+    <h1 class="titletop">Sign up to the newsletter!</h1>
+    
+      <input class="input-field" type="text" placeholder="Input name...">
+      <input class="input-field" type="text" placeholder="Mail Adress...">
+      <ul class="list-unstyled">
+        <div class="checkbox-container">
+          <input type="checkbox" id="terms">
+          <label for="terms">I agree to receive a monthly newsletter.</label>
+      </div>
+        <li><button class="submit-button">Submit</button></li>
+      </ul>
+  </form>
+</div>
     
 </body>
 </html>

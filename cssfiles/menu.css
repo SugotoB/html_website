@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+:root{
+    --main-white: #e6e7e9;
+    --dark-green: #02824f;
+    --light-green: #99cc99;
+    --red: #37553c;
+}
+
+
+body{
+    background-color: var(--main-white);
+}
+
+
+/*====NAVIGATION==== */
+
+.main_nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar{
+  display: flex;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  padding: 1% 4%;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.8s ease;
+}
+
+.navbar img{
+  max-width: 80px;
+}
+
+
+.links{
+  margin: 0 auto;
+}
+
+.links ul{
+  display: flex;
+}
+
+
+.links ul li{
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.links ul li a{
+  color: var(--light-green);
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+.links ul li::after{
+content: "";
+display: block;
+margin: auto;
+width: 0%;
+height: 2px;
+background: var(--light-green);
+transition: 0.4s ease-in-out;
+}
+
+.links ul li:hover::after{
+width: 100%;
+}
+
+.links ul li a:hover::after{
+width: 100%;
+}
+
+.hright{
+  margin: 10px 20px;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+	appearance: none;
+	border: none;
+  color: white;
+	outline: none;
+  max-height: 30px;
+  max-width: 200px;
+  border-radius: 5px;
+	background: none;
+	cursor: pointer;
+  font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color:var(--light-green);
+}
+button {
+	background-image: linear-gradient(to right, var(--light-green) 50%, rgb(255, 255, 255) 50%);
+	background-size: 200%;
+
+	transition: 0.4s ease-out;
+}
+
+button:hover {
+	background-position: right;
+  color: var(--light-green);
+}
+
+button {
+	position: relative;
+	overflow: hidden;
+}
+
+button span{
+    padding: 0 24px;
+}
+
+
+.topbanner{
+  min-width: 100vw;
+  min-height: 35vh;
+  background: url(images/owner_image.png);
+}
+
+/* MENU */
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+#search-container {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #110f29;
+  padding: 1em 0.3em;
+}
+
+#products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 0;
+}
+
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  width: 70vw;
+  margin-top: 1em;
+  height: 30vh;
+  padding: 1em;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+.image-container {
+  display: flex;
+  justify-content: flex-start; 
+  width: 100%; 
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+}
+
+.card:hover {
+  transform: scale(1.006);
+}
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+.container h5 {
+  font-weight: 500;
+  margin-right: 3rem;
+}
+.hide {
+  display: none;
+}
+
+/* autosuggestions */
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  flex-direction: column;
+  display: flex;
+  z-index: 99;
+  margin-top: 25vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  margin-right: 10vh;
+  cursor: pointer;
+  background-color: #ffffff; 
+  width: 40%;
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9; 
+}
+
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    flex-direction: row;  /* contents of the card are in a row */
+    align-items: center;  /* center the content vertically */
+    justify-content: flex-start;  /* push the content to the start the flex container */
+    max-width: 90%;  /* adjust as per your requirements */
+    margin: 1em auto;  /* horizontally center the card */
+  }
+  .image-container {
+    order: -1;  /* push other content to the right of the image container */
+    width: 50%;  /* adjust as per your requirements */
+  }
+  img {
+    width: 100%;  /* make the image take up the full width of the image container */
+    object-fit: cover;  /* keep aspect ratio while filling container */
+    height: auto;  /* adjust height automatically */
+  }
+  .container {
+    width: 50%;  /* adjust as per your requirements */
+    padding-left: 1em;  /* add space between image and text */
+  }
+  #products {
+    grid-template-columns: auto;  /* fit cards in one column */
+    grid-column-gap: 1em;
+  }
+}

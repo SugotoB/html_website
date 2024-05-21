@@ -521,9 +521,8 @@ button span{
 @media all and (max-width:600px){
 
     /* ==banner== */
-    .icon-menu {
-      display: block;}
 
+  
     .banner img{
       z-index: -1;
     }
@@ -550,49 +549,15 @@ button span{
         text-align: center;
     }
 
-    /* ==navigation== */
-    .main_nav{
-        background-color: var(--main-white);
-        min-height: 100vh;
-        position: fixed;
-        min-width: 250px;
-        display: none;
-        top: 0;
-        flex-direction: column;
-        right: 0;
-        box-shadow: -10px 0 10px #0000001b;
-    }
-    
-    .links ul{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
-        align-items: center;
+
+
+    .imagesection1{
+      flex-direction: column;
+
     }
 
-    .links ul li{
-        margin: 1rem;
-    }
-    
-    .links ul li a{
-        color: var(--light-green);
-    }
-
-    
-
-    .hright{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2em;
-        flex-direction: column;
-    }
-
-    .hright #newsletterbtn{
-        background: var(--light-green);
-        border-radius: 10000px;
-        min-height: 40px;
-        min-width: 200px;
+    .imagesection2{
+      flex-direction: column-reverse;
     }
 
 }

@@ -151,10 +151,10 @@ button span{
   align-items: center;
 }
 
-#search-container input {
+#search-container input{
   background-color: transparent;
   width: 40%;
-  border-bottom: 2px solid #110f29;
+  border: 2px solid var(--light-green);
   padding: 1em 0.3em;
 }
 
@@ -197,7 +197,7 @@ img {
 }
 .container {
   padding-top: 1em;
-  color: #110f29;
+  color: var(--dark-green);
 }
 .container h5 {
   font-weight: 500;
@@ -232,39 +232,35 @@ img {
 }
 
 .autocomplete-items div:hover {
-  /*when hovering an item:*/
   background-color: #e9e9e9; 
 }
 
 .autocomplete-active {
-  /*when navigating through the items using the arrow keys:*/
-  background-color: DodgerBlue !important; 
   color: #ffffff; 
 }
 
 @media screen and (max-width: 720px) {
   .card {
-    flex-direction: row;  /* contents of the card are in a row */
-    align-items: center;  /* center the content vertically */
-    justify-content: flex-start;  /* push the content to the start the flex container */
-    max-width: 90%;  /* adjust as per your requirements */
-    margin: 1em auto;  /* horizontally center the card */
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-start;  
+    margin: 1em auto; 
   }
   .image-container {
-    order: -1;  /* push other content to the right of the image container */
-    width: 50%;  /* adjust as per your requirements */
+    order: -1;
+    width: 50%; 
   }
   img {
-    width: 100%;  /* make the image take up the full width of the image container */
-    object-fit: cover;  /* keep aspect ratio while filling container */
-    height: auto;  /* adjust height automatically */
+    width: 100%;
+    object-fit: cover;  
+    height: auto;
   }
   .container {
-    width: 50%;  /* adjust as per your requirements */
-    padding-left: 1em;  /* add space between image and text */
+    width: 50%;
+    padding-left: 1em; 
   }
   #products {
-    grid-template-columns: auto;  /* fit cards in one column */
+    grid-template-columns: auto; 
     grid-column-gap: 1em;
   }
 }

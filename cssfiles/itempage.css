@@ -23,12 +23,7 @@ body{
 
 
 /*====NAVIGATION==== */
-#current{
-    border-style: solid;
-    border-width: 2px;
-    padding: 1vh;
-    border-radius: 10px;
-  }
+
 .main_nav{
     display: flex;
     justify-content: space-evenly;
@@ -78,6 +73,20 @@ body{
     color: var(--light-green);
     text-decoration: none;
     transition: .3s linear;
+}
+
+.links ul li::after{
+  content: "";
+  display: block;
+  margin: auto;
+  width: 0%;
+  height: 2px;
+  background: var(--light-green);
+  transition: 0.4s ease-in-out;
+}
+
+.links ul li:hover::after{
+  width: 100%;
 }
 
 .hright{
